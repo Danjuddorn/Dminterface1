@@ -1,0 +1,50 @@
+﻿@model Dminterface1.Models.Response
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Response</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Response1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Response1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Person.Forename)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Person.Forename)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Question.Question1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Question.Question1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Survey.idSurvey)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Survey.idSurvey)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idResponse }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
